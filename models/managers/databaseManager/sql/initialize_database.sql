@@ -18,15 +18,16 @@ CREATE TABLE IF NOT EXISTS users (
 -- Создание таблицы statuses
 CREATE TABLE IF NOT EXISTS statuses (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
-    name TEXT UNIQUE NOT NULL
+    status TEXT UNIQUE NOT NULL
 );
 
 -- Добавить статусы в таблицу
-INSERT INTO statuses (name) VALUES ('в процессе'), ('отложена'), ('завершена');
+INSERT INTO statuses (status) VALUES ('в процессе'), ('отложена'), ('завершена');
 
 -- Создание таблицы tasks
 CREATE TABLE IF NOT EXISTS tasks (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
+    number INTEGER NOT NULL,
     user_id INTEGER NOT NULL,
     title TEXT NOT NULL,
     description TEXT,
