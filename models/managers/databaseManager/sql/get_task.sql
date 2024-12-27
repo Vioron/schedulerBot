@@ -7,4 +7,4 @@ JOIN
 ON
     tasks.status_id = statuses.id
 WHERE
-    user_id = ? AND tasks.id = ?
+    user_id = ? AND tasks.number = ?

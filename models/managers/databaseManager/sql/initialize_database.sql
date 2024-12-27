@@ -22,7 +22,7 @@ CREATE TABLE IF NOT EXISTS statuses (
 );
 
 -- Добавить статусы в таблицу
-INSERT INTO statuses (status) VALUES ('в процессе'), ('отложена'), ('завершена');
+INSERT INTO statuses (status) VALUES ('В процессе'), ('Отложена'), ('Завершена');
 
 -- Создание таблицы tasks
 CREATE TABLE IF NOT EXISTS tasks (
